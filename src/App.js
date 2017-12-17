@@ -5,6 +5,7 @@ import {
     Link,
     Switch
 } from 'react-router-dom'
+import { connect } from 'react-redux'
 
 import './App.scss'
 
@@ -34,4 +35,6 @@ class App extends Component {
   }
 }
 
-export default App;
+const AppContainer = connect()(App);
+
+export default AppContainer;

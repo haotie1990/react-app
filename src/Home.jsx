@@ -2,6 +2,7 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 
 import { Layout, Button } from 'antd'
+import UserInfoContainer from './UserInfo.jsx'
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -33,6 +34,7 @@ class HomePage extends React.Component {
                 <Button onClick={this.handleClickUpload}>上传</Button>
                 <Button onClick={this.handleClickLogin}>登录</Button>
                 <Button onClick={this.handleClickSignUp}>注册</Button>
+                <UserInfoContainer/>
             </Layout>
         )
     }
