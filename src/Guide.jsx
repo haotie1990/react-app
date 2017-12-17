@@ -30,7 +30,7 @@ class GuidePage extends React.Component {
                 <Content>
                     <Switch>
                         <Route path={`${match.url}/upload`} component={Upload}></Route>
-                        <Route path={`${match.url}/fileread`} component={FileRead}></Route>
+                        <Route path={`${match.url}/fileread/:fid`} component={FileRead}></Route>
                     </Switch>
                 </Content>
             </Layout>

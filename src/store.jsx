@@ -15,7 +15,7 @@ export const setFileInfo = (data) => {
 }
 
 function UserInfo(state = {}, action) {
-    console.log('reducer UserInfo ', state);
+    // console.log('reducer UserInfo ', state);
     if (action.type === 'SET_USERINFO') {
         return action.data;
     }
@@ -23,7 +23,7 @@ function UserInfo(state = {}, action) {
 }
 
 function FileInfo(state = {}, action) {
-    console.log('reducer FileInfo ', state);
+    // console.log('reducer FileInfo ', state);
     if (action.type === 'SET_FILEINFO') {
         return action.data;
     }
